@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int day=0,week=0,year=0,myDays,md;
+    printf("Enter the days you want to convert: ");
+    scanf("%d",&myDays);
+    md = myDays;
+    year = myDays/365;
+    myDays-=(year)*365;
+    week = myDays/7;
+    myDays -= (week*7);
+    day = myDays;
+    printf("%d Days is %d Years %d Weeks and %d Days\n",md,year,week,day);
+}
