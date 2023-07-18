@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    float celsius,fahrenheit;
+    printf("Enter Temperature in Fahrenheit: ");
+    scanf("%f",&fahrenheit);
+    celsius = ((fahrenheit - 32)/9)*5;
+    printf("Temperature in Celsius is: ");
+    printf("%.2f\n",celsius);
+}
